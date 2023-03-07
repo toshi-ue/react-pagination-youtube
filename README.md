@@ -1,6 +1,6 @@
 # README
 
-実行コマンド
+<!-- 実行コマンド履歴
 
 ```bash
 # Dockerfile、docker-compose.ymlを用意しておく
@@ -11,6 +11,17 @@ docker compose run --rm front yarn create vite .
 #=> ✔ Current directory is not empty. Remove existing files and continue? … yes
 #=> ✔ Select a framework: › React
 #=> ✔ Select a variant: › TypeScript
+``` -->
+
+## 環境構築、サーバー起動
+
+環境構築
+```bash
+make init
+```
+
+```bash
+sc up
 ```
 
 ## 参考
