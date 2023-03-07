@@ -3,8 +3,14 @@ services:
   front:
     build:
       context: .
+    command: sh -c "yarn dev"
+    ports:
+      - 5173:5173
     tty: true
     volumes:
       - ./:/frontapp
-    ports:
-      - 5173:5173
+      # [dockerでyarn addすると遅い問題を改善する - Qiita](https://qiita.com/MoguraStore/items/432be06fb333d6158eb1)
+      - yarn-cache:/usr/locale/share/.cache/yarn/v2
+
+volumes:
+  yarn-cache:

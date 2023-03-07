@@ -7,3 +7,6 @@ RUN apk update && \
   apk add --no-cache vim yarn bash
 
 COPY . /frontapp
+
+EXPOSE 5173
+CMD [ "yarn", "dev"]
