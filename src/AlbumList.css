@@ -1,0 +1,12 @@
+.albumGridWrapper {
+  display: grid;
+  /* 以下ではタブレットサイズ以下のとき等分されない(March, 08, 2023) */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* [CSS Gridはレスポンシブ対応のよく使うレイアウトにも便利！効果的に使用するポイントのまとめ | コリス](https: //coliss.com/articles/build-websites/operation/css/responsive-layout-with-css-grid.html) */
+  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+}
+
+.albumImage {
+  width: 100%;
+  object-fit: cover;
+}
