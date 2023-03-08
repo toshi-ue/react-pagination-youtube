@@ -11,7 +11,7 @@ type Props = {
 const Pagination = (props: Props) => {
   const { albums } = props
 
-  return <div>Pagination.tsx<AlbumList albums={albums} /></div>
+  return (<div className="albumWrapper"><AlbumList albums={albums} /></div>)
 }
 
 export default Pagination;

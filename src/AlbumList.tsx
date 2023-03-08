@@ -9,7 +9,14 @@ type Props = {
 const AlbumList = (props: Props) => {
   const { albums } = props
 
-  return <div>AlbumList.tsx {albums.map((album) => (<div><img src={album.url} alt="{album.title}" /></div>))}</div>
+  return (
+    <div className="albumGridWrapper">
+      {albums.map((album) => (
+        <div key={album.id}>
+          <img src={album.url} alt="album" className="albumImage" />
+        </div>
+      ))}
+    </div>)
 }
 
 export default AlbumList;
