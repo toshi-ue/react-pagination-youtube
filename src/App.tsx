@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import Pagination from './Pagination'
 import Album from './type'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-
+      <Pagination />
     </div>
   )
 }
