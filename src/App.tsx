@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react'
 import './App.css'
+import Album from './type'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [albums, setAlbums] = useState<Album[]>([])
 
   useEffect(() => {
     const getAlbums = async () => {
