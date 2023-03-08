@@ -1,5 +1,14 @@
 # README
 
+以下のURLを参考にサンプルアプリケーションでReactとTypeScriptの練習
+[ReactとTypescriptでページネーションを実装してみよう【react-paginateを利用】 - YouTube](https://www.youtube.com/watch?v=BBpW5MLw29U&t=1s&ab_channel=%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB)
+
+- viteを使用
+- jsonplaceholder を使用
+  - [JSONPlaceholder - Free Fake REST API](https://jsonplaceholder.typicode.com/)
+    - FakeAPIといわれる種類のサービス
+- ページネーション
+- TypeScript少々
 <!-- 実行コマンド履歴
 
 ```bash
@@ -16,13 +25,21 @@ docker compose run --rm front yarn create vite .
 ## 環境構築、サーバー起動
 
 環境構築
+
 ```bash
 make init
 ```
 
+サーバー構築
+
 ```bash
 sc up
 ```
+
+## 備考
+
+- React.js18だとローカル開発環境ではuseEffectは2回呼ばれる（本番環境は1回だけ呼ばれる）。
+- Genericsは変数のように型を指定することができる
 
 ## 参考
 
