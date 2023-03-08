@@ -10,14 +10,17 @@ function App() {
     const getAlbums = async () => {
       await fetch("https://jsonplaceholder.typicode.com/albums/1/photos")
         .then((res) => res.json())
-        .then((album) => console.log(album));
+        .then((albums) => {
+          console.log(albums)
+          setAlbums(albums)
+        });
     }
     getAlbums();
   }, [])
 
   return (
     <div className="App">
-      <Pagination />
+      <Pagination albums={albums} />
     </div>
   )
 }
