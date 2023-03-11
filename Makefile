@@ -1,4 +1,4 @@
-init:
+setup:
 		docker compose build
 		@make yarn/install
 
