@@ -41,7 +41,6 @@ sc up
 - React.js18だとローカル開発環境ではuseEffectは2回呼ばれる（本番環境は1回だけ呼ばれる）。
 - Genericsは変数のように型を指定することができる
 
-
 - 05-pagination
 <!-- https://youtu.be/BBpW5MLw29U?t=1187 -->
 
