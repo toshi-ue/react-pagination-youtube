@@ -22,10 +22,17 @@ const Pagination = (props: Props) => {
   const currentAlbums = albums.slice(itemsOffset, endOffset)
   const pageCount = Math.ceil(albums.length / itemsPerPage)
 
+  const handlePageClick = (e: { selected: number; }) => {
+    console.log('e: ', e);
+    console.log(e.selected);
+    const newOffset = (e.selected * itemsPerPage) % albums.length
+    setItemsOffset(newOffset)
+  }
+
   return (
     <div className="albumWrapper">
       <AlbumList albums={albums} currentAlbums={currentAlbums} />
-      <ReactPaginate pageCount={pageCount} />
+      <ReactPaginate pageCount={pageCount} onPageChange={handlePageClick} />
     </div>
   )
 }
