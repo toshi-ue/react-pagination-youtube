@@ -8,6 +8,7 @@
   - [JSONPlaceholder - Free Fake REST API](https://jsonplaceholder.typicode.com/)
     - FakeAPIといわれる種類のサービス
 - ページネーション
+  - ページネーションの仕組みもわかる
 - TypeScript少々
 <!-- 実行コマンド履歴
 
@@ -27,7 +28,7 @@ docker compose run --rm front yarn create vite .
 環境構築
 
 ```bash
-make init
+make setup
 ```
 
 サーバー構築
