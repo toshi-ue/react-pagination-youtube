@@ -32,7 +32,27 @@ const Pagination = (props: Props) => {
   return (
     <div className="albumWrapper">
       <AlbumList albums={albums} currentAlbums={currentAlbums} />
-      <ReactPaginate pageCount={pageCount} onPageChange={handlePageClick} />
+      <div className="paginationWrapper">
+        <ReactPaginate
+          previousLabel="Previous"
+          nextLabel="Next"
+          pageClassName="page-item"
+          pageLinkClassName="page-link"
+          previousClassName="page-item"
+          previousLinkClassName="page-link"
+          nextClassName="page-item"
+          nextLinkClassName="page-link"
+          breakLabel="..."
+          breakClassName="page-item"
+          breakLinkClassName="page-link"
+          pageCount={pageCount}
+          marginPagesDisplayed={2}
+          pageRangeDisplayed={5}
+          onPageChange={handlePageClick}
+          containerClassName="pagination"
+          activeClassName="active"
+        />
+      </div>
     </div>
   )
 }

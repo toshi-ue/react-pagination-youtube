@@ -56,3 +56,6 @@ sc up
 [yarn cache clean を活用して Docker イメージサイズを削減](https://zenn.dev/elm200/articles/7cfa842a113fb6)
 [Docker のキャッシュを全力で使いこなそう](https://zenn.dev/kou64yama/articles/powerful-docker-build-cache)
 [Docker内でnode-modules消してしまって環境が壊れた時の対処法 - Qiita](https://qiita.com/kaino5454/items/16658449683d4c33df0e)
+
+[react-paginate - npm](https://www.npmjs.com/package/react-paginate)
+[サイトの表示高速化につながる18のこと | knowledge / baigie](https://baigie.me/officialblog/2019/11/26/high-speed-frontend/)

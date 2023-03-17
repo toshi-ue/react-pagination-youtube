@@ -2,3 +2,9 @@
   text-align: center;
   width: 100%;
 }
+
+.paginationWrapper {
+  display: flex;
+  justify-content: content;
+  margin-top: 20px;
+}
